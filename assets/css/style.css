@@ -1,0 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Oswald:wght@200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+/* Hero image */
+body {
+  background-image: url(../images/hero-img.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title-container {
+  margin-top: 60px;
+}
+
+.title-home,
+.title-end {
+  font-family: Oswald, sans-serif;
+  color: #d51e13;
+  text-align: center;
+  font-weight: 600;
+  font-size: 5rem;
+  text-shadow: 3px 2px #f2d38c;
+}
+.sub-title {
+  font-family: Oswald, sans-serif;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.9rem;
+  text-shadow: 3px 2px #f2d38c;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #212529;
+}
+.quote {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-size: 2.3rem;
+  font-style: italic;
+  text-shadow: 3px 2px #f2d38c;
+}
+
+.movie {
+  font-family: Oswald, sans-serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-shadow: 3px 2px #f2d38c;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.heading {
+  margin-top: 80px;
+  font-family: "Bungee Inline", sans-serif;
+  font-size: 2.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  word-wrap: break-word;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.max-score {
+  font-family: Oswald, sans-serif;
+  color: #d51e13;
+  text-align: center;
+  font-weight: 600;
+  font-size: 5rem;
+  text-shadow: 3px 2px #f2d38c;
+}
+#end-score {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-family: Oswald, sans-serif;
+  color: #d51e13;
+  text-align: center;
+  font-weight: 600;
+  font-size: 5rem;
+  text-shadow: 3px 2px #f2d38c;
+}
+#movie-quote-end {
+  margin-top: 30px;
+}
+.controls-container {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* Control buttons */
+
+.controls {
+  background-color: rgb(31, 24, 24, 0.9);
+  color: #f2d38c;
+  font-family: "Bungee Inline", sans-serif;
+  height: 4.5rem;
+  width: 10rem;
+  font-size: larger;
+  border-radius: 5px;
+  border: none;
+}
+
+.controls:hover {
+  background-color: #d51e13;
+}
+
+#drop {
+  background-color: #d51e13;
+  border: none;
+  text-shadow: 3px 3px 0px black;
+}
+
+#drop:hover {
+  background-color: rgb(31, 24, 24, 0.9);
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f2d38c;
+  width: 100%;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-family: Oswald, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.dropdown-content a:hover {
+  background-color: #d51e13;
+}
+
+.show {
+  display: block;
+}
+
+.quote-container {
+  height: auto;
+}
+.tracking-container {
+  margin-top: 30px;
+}
+
+/* Answer choices */
+.btn-answer {
+  height: 60px;
+  width: 95%;
+  background-color: #f2d38c;
+  border-radius: 5px;
+  color: black;
+  font-family: Oswald, sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.questions-container.smaller-text .btn-answer {
+  font-size: 1.25rem;
+}
+
+.questions-container.very-small-text .btn-answer {
+  font-size: 1rem;
+}
+
+.questions-container {
+  background-color: rgba(213, 30, 19, 0.5);
+  height: auto;
+  margin-top: 10px;
+}
+
+#question {
+  color: #f2d38c;
+  font-family: "Bungee Inline", sans-serif;
+  text-align: center;
+  font-size: 1.8rem;
+  text-shadow: 3px 4px black;
+  word-spacing: 4px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  padding-top: 30px;
+}
+
+/* Tracking container */
+#time-cont,
+#question-cont,
+#score-cont {
+  font-family: "Bungee Inline", sans-serif;
+  color: black;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#question-text,
+#score-text,
+#time-text {
+  margin-bottom: 0;
+}
+
+.fas {
+  color: #d51e13;
+}
+
+.fa-music,
+.fa-pause,
+.fa-play {
+  color: #f2d38c;
+}
+
+/* Game Screen Buttons  */
+#restart-btn,
+#musicOn,
+#start-over-btn,
+#restart-level-btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #f2d38c;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Rules Modal */
+
+.modal-body {
+  color: black;
+  background-color: #f2d38c;
+}
+
+#modalTitle {
+  font-family: "Bungee Inline", sans-serif;
+  color: #f2d38c;
+  font-size: x-large;
+}
+.modal-header {
+  background-color: #d51e13;
+}
+
+.modal-footer {
+  background-color: #d51e13;
+}
+
+.modal-body li {
+  font-family: Oswald, sans-serif;
+  font-size: larger;
+}
+
+.modal-body ul {
+  padding: 20px;
+}
+
+.btn-answer.correct {
+  background-color: green;
+}
+
+.btn-answer.incorrect {
+  background-color: #d51e13;
+}
+
+#alertModal {
+  text-align: center;
+}
+
+/* Alert Modal */
+#alert-modal-text {
+  font-family: Oswald, sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: x-large;
+  width: 100%;
+  position: absolute;
+  top: 25%;
+}
+
+#alert-modal-close {
+  margin-top: 65px;
+  background-color: black;
+  font-family: "Bungee Inline", sans-serif;
+  border-radius: 5px;
+  border: none;
+  color: #f2d38c;
+  width: 20%;
+  height: 20%;
+}
+
+#play-again-btn {
+  margin-top: -20px;
+  width: 170px;
+}
+/* Page 404 */
+#error-btn {
+  padding: 5px 25px;
+}
+
+/* Error Message */
+
+.error-container {
+  text-align: center;
+}
+/*  Media Queries  */
+
+@media (min-width: 200px) and (max-width: 576px) {
+  body {
+    overflow-y: visible;
+  }
+
+  .sub-title {
+    font-family: Oswald, sans-serif;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.9rem;
+    text-shadow: 3px 2px #f2d38c;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #212529;
+  }
+
+  .title-container {
+    margin-top: 10px;
+  }
+  .dropdown-content {
+    margin-top: -18px;
+  }
+
+  .controls-container {
+    margin-top: -5px;
+  }
+  .controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+  }
+
+  .title-end {
+    font-size: 5rem;
+    margin-top: 50px;
+  }
+  .title-home {
+    font-size: 3rem;
+    margin-top: 40px;
+  }
+  .quote {
+    font-size: 1.8rem;
+    margin-top: 10px;
+  }
+  .movie {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  #movie-quote-end {
+    margin-top: 20px;
+  }
+  #movie {
+    margin-top: 20px;
+  }
+
+  #levelChoice {
+    margin-bottom: 5px;
+  }
+
+  #time-cont,
+  #question-cont,
+  #score-cont {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+
+  #question {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+  .btn-answer {
+    font-size: 1.2rem;
+  }
+
+  .quote-container {
+    display: none;
+  }
+
+  .tracking-container {
+    margin-top: 20px;
+  }
+  #restart-btn,
+  #start-over-btn,
+  #restart-level-btn {
+    font-size: smaller;
+  }
+
+  #play-again-btn {
+    width: 170px;
+    margin-top: 20px;
+  }
+  .max-score {
+    font-family: Oswald, sans-serif;
+    color: #d51e13;
+    text-align: center;
+    font-weight: 600;
+    font-size: 4rem;
+    text-shadow: 3px 2px #f2d38c;
+  }
+  #movie-title {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  body {
+    overflow-y: scroll;
+  }
+  .title-end {
+    margin-top: 50px;
+    font-size: 5rem;
+  }
+  .title-home {
+    font-size: 4.3rem;
+    margin-top: 70px;
+  }
+  .quote {
+    margin-top: 50px;
+    font-size: 1.8rem;
+  }
+  .sub-title {
+    font-family: Oswald, sans-serif;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.9rem;
+    text-shadow: 3px 2px #f2d38c;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #212529;
+  }
+  #movie {
+    margin-top: 20px;
+  }
+
+  .movie {
+    font-size: 1.5rem;
+  }
+  #question {
+    font-size: 1.5rem;
+  }
+  .max-score {
+    font-family: Oswald, sans-serif;
+    color: #d51e13;
+    text-align: center;
+    font-weight: 600;
+    font-size: 4rem;
+    text-shadow: 3px 2px #f2d38c;
+  }
+  #score {
+    margin-bottom: 20px;
+  }
+  #movie-quote-end {
+    font-size: 2rem;
+  }
+  #movie-title {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #game-screen {
+    margin-top: 150px;
+  }
+
+  .movie {
+    margin-top: 30px;
+  }
+  .title-end {
+    margin-top: 20px;
+    font-size: 5.2rem;
+  }
+  .title-home {
+    font-size: 4.5rem;
+    margin-top: 70px;
+  }
+  .sub-title {
+    font-family: Oswald, sans-serif;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.9rem;
+    text-shadow: 3px 2px #f2d38c;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #212529;
+  }
+  .max-score {
+    font-family: Oswald, sans-serif;
+    color: #d51e13;
+    text-align: center;
+    font-weight: 600;
+    font-size: 5rem;
+    text-shadow: 3px 2px #f2d38c;
+  }
+  #score {
+    margin-bottom: 20px;
+  }
+
+  #play-again-btn {
+    width: 170px;
+  }
+  #movie-quote-end {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media (hover: hover) {
+  .btn-answer:hover {
+    -webkit-box-shadow: 0px 0px 100px 0px rgb(20, 16, 2);
+    box-shadow: 0px 0px 100px 0px rgb(20, 16, 2);
+    -webkit-transition: 0.9s ease;
+    -o-transition: 0.9s ease;
+    transition: 0.9s ease;
+  }
+}
