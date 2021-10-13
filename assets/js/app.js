@@ -65,9 +65,9 @@ const customAlert = (message) => {
  * Fetch questions from API and set available questions variable
  * */
  const getQuestions = () => {
-  return fetch(`https://opentdb.com/api.php?amount=10&category=11&difficulty=${difficultyLevel}&type=multiple`)
+  return fetch(`https://opentdb.com/api.php?amount=10&category=17&difficulty=${difficultyLevel}&type=multiple`)
     .then((res) => {
-      return res.json();
+      return res.json(); 
     })
     .then((loadedQuestions) => {
       availableQuestions = loadedQuestions.results.map((loadedQuestion) => {

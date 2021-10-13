@@ -15,7 +15,7 @@ html {
 
 /* Hero image */
 body {
-  background-image: url(../images/hero-img.jpg);
+  background-image: url(../images/hero-img.jfif);
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
@@ -28,7 +28,7 @@ body {
 .title-home,
 .title-end {
   font-family: Oswald, sans-serif;
-  color: #d51e13;
+  color: #00308F;
   text-align: center;
   font-weight: 600;
   font-size: 5rem;
@@ -90,7 +90,7 @@ body {
 
 .max-score {
   font-family: Oswald, sans-serif;
-  color: #d51e13;
+  color: #00308F;
   text-align: center;
   font-weight: 600;
   font-size: 5rem;
@@ -100,7 +100,7 @@ body {
   font-size: 4rem;
   margin-bottom: 20px;
   font-family: Oswald, sans-serif;
-  color: #d51e13;
+  color: #00308F;
   text-align: center;
   font-weight: 600;
   font-size: 5rem;
@@ -136,11 +136,11 @@ body {
 }
 
 .controls:hover {
-  background-color: #d51e13;
+  background-color: #00308F;
 }
 
 #drop {
-  background-color: #d51e13;
+  background-color: #00308F;
   border: none;
   text-shadow: 3px 3px 0px black;
 }
@@ -171,7 +171,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #d51e13;
+  background-color: #00308F;
 }
 
 .show {
@@ -210,7 +210,7 @@ body {
 }
 
 .questions-container {
-  background-color: rgba(213, 30, 19, 0.5);
+  background-color: rgba(51, 153, 0, 0.5);
   height: auto;
   margin-top: 10px;
 }
@@ -245,7 +245,7 @@ body {
 }
 
 .fas {
-  color: #d51e13;
+  color: #00308F;
 }
 
 .fa-music,
@@ -281,11 +281,11 @@ body {
   font-size: x-large;
 }
 .modal-header {
-  background-color: #d51e13;
+  background-color: #00308F;
 }
 
 .modal-footer {
-  background-color: #d51e13;
+  background-color: #00308F;
 }
 
 .modal-body li {
